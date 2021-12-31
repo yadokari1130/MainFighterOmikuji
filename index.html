@@ -220,7 +220,7 @@
 		if (num == 53 || num == 54 || num == 55) color = 1;
 		document.getElementById("fighter").innerHTML = fighers_ja[num] + "(" + color + "Pカラー)";
 		let text = "2022年のメインファイターは・・・" + fighers_ja[num] + "(" + color + "Pカラー)" + "です！";
-		document.getElementById("tweet").setAttribute("href", "https://twitter.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2022&text=" + text + " &url=&via=Y4D0K4R1");
+		document.getElementById("tweet").setAttribute("href", "https://twitter.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2022&text=" + text + " &url=https://yadokari1130.github.io/MainFighterOmikuji/&via=Y4D0K4R1");
 		document.getElementById("img_fighter").setAttribute("src", "https://www.smashbros.com/assets_v2/img/fighter/" + fighers_en[num] +"/main" + (color != 1 ? color : "") + ".png");
 		document.getElementById("result").removeAttribute("hidden");
 		num++;
