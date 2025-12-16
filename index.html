@@ -15,15 +15,15 @@
 	<meta name="twitter:site" content="@Y4D0K4R1" />
 	<meta property="og:url" content="https://main-fighter-omikuji.yadokari1130-game.workers.dev/" />
 	<meta property="og:title" content="メインファイターおみくじ" />
-	<meta property="og:description" content="2025年のメインファイターを決めましょう！" />
+	<meta property="og:description" content="2026年のメインファイターを決めましょう！" />
 	<meta property="og:image" content="REPLACE_FIGHTER_IMAGE" />
 </head>
 
 <body>
 	<div class="container">
-		<h1 class="col-12 col-md-6 tytle">メインファイターおみくじ 2025</h1>
+		<h1 class="col-12 col-md-6 tytle">メインファイターおみくじ 2026</h1>
 		<div class="container">
-			<p>2025年のメインファイターを決めましょう！</p>
+			<p>2026年のメインファイターを決めましょう！</p>
 			<p>ここで出たファイターを使うといいことがあるかもしれません・・・</p>
 		</div>
 		<div class="container">
@@ -226,8 +226,8 @@
 		let color = Math.floor(Math.random() * 8) + 1;
 		if (num == 53 || num == 54 || num == 55) color = 1;
 		$("#fighter").html(fighers_ja[num] + "(" + color + "Pカラー)");
-		let text = "2025年のメインファイターは・・・" + fighers_ja[num] + "(" + color + "Pカラー)" + "です！";
-		$("#tweet").attr("href", "https://twitter.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2025&text=" + text + " &url=https://main-fighter-omikuji.yadokari1130-game.workers.dev?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
+		let text = "2026年のメインファイターは・・・" + fighers_ja[num] + "(" + color + "Pカラー)" + "です！";
+		$("#tweet").attr("href", "https://twitter.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2026&text=" + text + " &url=https://main-fighter-omikuji.yadokari1130-game.workers.dev?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
 		$("#img_fighter").attr("src", "https://www.smashbros.com/assets_v2/img/fighter/" + fighers_en[num] +"/main" + (color != 1 ? color : "") + ".png");
 		$("#result").removeAttr("hidden");
 	}
