@@ -239,7 +239,7 @@
 		if (num == 53 || num == 54 || num == 55) color = 1;
 		$("#fighter").html(fighers_ja[num] + "(" + color + "Pカラー)");
 		let text = "2026年のメインファイターは・・・" + fighers_ja[num] + "(" + color + "Pカラー)" + "です！";
-		$("#tweet").attr("href", "https://x.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2026&text=" + text + " &url=https://ssbu-omikuji.yadokari1130.com?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
+		$("#tweet").attr("href", "https://x.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2026&text=" + encodeURIComponent(text) + " &url=https://ssbu-omikuji.yadokari1130.com?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
 		$("#img_fighter").attr("src", "https://www.smashbros.com/assets_v2/img/fighter/" + fighers_en[num] +"/main" + (color != 1 ? color : "") + ".png");
 		$("#result").removeAttr("hidden");
 	}
