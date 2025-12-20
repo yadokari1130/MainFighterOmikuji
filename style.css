@@ -8,10 +8,11 @@
 }
 
 #draw {
-	margin: 50px 0;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
-body {
+body, footer {
 	background-color: #F1F1F1;
 }
 
