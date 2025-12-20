@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="https://yadokari1130.github.io/MainFighterOmikuji/style.css">
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@Y4D0K4R1" />
-	<meta property="og:url" content="https://main-fighter-omikuji.yadokari1130-game.workers.dev/" />
+	<meta property="og:url" content="https://ssbu-omikuji.yadokari1130.com/" />
 	<meta property="og:title" content="メインファイターおみくじ" />
 	<meta property="og:description" content="2026年のメインファイターを決めましょう！" />
 	<meta property="og:image" content="REPLACE_FIGHTER_IMAGE" />
@@ -239,7 +239,7 @@
 		if (num == 53 || num == 54 || num == 55) color = 1;
 		$("#fighter").html(fighers_ja[num] + "(" + color + "Pカラー)");
 		let text = "2026年のメインファイターは・・・" + fighers_ja[num] + "(" + color + "Pカラー)" + "です！";
-		$("#tweet").attr("href", "https://twitter.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2026&text=" + text + " &url=https://main-fighter-omikuji.yadokari1130-game.workers.dev?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
+		$("#tweet").attr("href", "https://x.com/intent/tweet?hashtags=スマブラSP,SSBU,メインファイターおみくじ,HappyNewYear2026&text=" + text + " &url=https://ssbu-omikuji.yadokari1130.com?num=" + num + "%26color=" + color + "&via=Y4D0K4R1");
 		$("#img_fighter").attr("src", "https://www.smashbros.com/assets_v2/img/fighter/" + fighers_en[num] +"/main" + (color != 1 ? color : "") + ".png");
 		$("#result").removeAttr("hidden");
 	}
